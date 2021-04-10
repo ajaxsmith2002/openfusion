@@ -39,6 +39,7 @@ std::string settings::GRUNTWORKJSON = "tdata/gruntwork.json";
 std::string settings::MOTDSTRING = "Welcome to OpenFusion!";
 std::string settings::DBPATH = "database.db";
 std::string settings::ACADEMYJSON = "tdata/1013/academy.json";
+std::string settings::SCRIPTSDIR = "scripts";
 
 #if PROTOCOL_VERSION == 1013
 std::string settings::XDTJSON = "tdata/1013/xdt.json";
@@ -97,6 +98,7 @@ void settings::init() {
     GRUNTWORKJSON = reader.Get("shard", "gruntwork", GRUNTWORKJSON);
     MOTDSTRING = reader.Get("shard", "motd", MOTDSTRING);
     DBPATH = reader.Get("shard", "dbpath", DBPATH);
+    SCRIPTSDIR = reader.Get("", "scripts", SCRIPTSDIR);
     ACCLEVEL = reader.GetInteger("shard", "accountlevel", ACCLEVEL);
     EVENTMODE = reader.GetInteger("shard", "eventmode", EVENTMODE);
     EVENTCRATECHANCE = reader.GetInteger("shard", "eventcratechance", EVENTCRATECHANCE);

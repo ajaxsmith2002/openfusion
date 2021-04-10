@@ -25,6 +25,7 @@ namespace settings {
     extern std::string EGGSJSON;
     extern std::string GRUNTWORKJSON;
     extern std::string DBPATH;
+    extern std::string SCRIPTSDIR;
     extern int EVENTMODE;
     extern int EVENTCRATECHANCE;
     extern bool MONITORENABLED;
